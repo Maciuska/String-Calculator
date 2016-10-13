@@ -6,11 +6,14 @@ public class Calculator {
 		if(text.equals("")){
 			return 0;
 		}
+		else if(text.contains(",")){
+			String [] numbers = text.split(",");
+			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+			//return sum(splitNumbers(text));
+		}
 		else
 			return 1;
-		/*else if(text.contains(",")){
-			return sum(splitNumbers(text));
-		}*/
+
 
 	}
 	/*
